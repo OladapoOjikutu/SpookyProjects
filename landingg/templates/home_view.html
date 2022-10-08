@@ -1,0 +1,291 @@
+{% load static %}
+<!DOCTYPE html>
+  <html>
+    <head> 
+      <!--Import Google Icon Font-->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+      <link rel ="stylesheet" href="{% static 'css/Guide.css' %}">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <header>
+        
+  <div class=" navbar-fixed">
+    <nav>
+      <div class=" white nav-wrapper" id="alonavbar">
+        <ul class="Navigation_bar">
+          <li><a href="Introduction.html" id="intro">Introduction</a></li>
+          <li><a href="Benefits.html" id="intro">Benefits</a></li>
+          <li><a href="About Guide.html" id="intro">About Guide</a></li>
+          <li><a href="Subscriptions.html"id="intro">Subscriptions</a></li>
+          <li><a href="Testimonials.html" id="intro">Testimonials</a></li>
+          <li><a href="About Author.html" id="intro">About Author</a></li>ython
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+    <body> 
+        <!--place the book and the tagline in here-->
+  
+<section class = "YURU" style="background-image:url('static/Alpha_images/Hero_Back.png')"> 
+  <div class="overlay">
+      <!--Create the div for the image to be attached to sit-->
+      <div class = "vp_flex">
+        <div class = "hero_message">
+            <h4 class ="vp_message" src="{% static './fonts/BRITANNIC.TTF' %}">Uncover the hidden talents and beautiful attributes <br> your child possesses just by using their name
+                 </h4>
+      </div>
+
+      <div class="buttonss">
+          <div class ="button1"><a class="waves-effect waves-light btn-large" id=testimonials_btn >See Testimonials</a></div> 
+          <div class ="button1"><a class="waves-effect waves-light btn-large" id=getbook_btn>Get Book </a></div>
+      </div>
+      
+      <div class ="image_holder">
+          <img src="{% static './Alpha_Images/Book Image.png' %}" alt="" class="book">
+      </div>
+      </div>
+    
+    
+   <!-- </div> --closing the vp flex  div -->
+    
+    </section>
+    
+      <!--Create a flex box for easy containment and alignment of the buttons-->
+      
+
+    <!--The Introduction Section-->
+    <section class ="introduction">
+      <div class ="introduction_container"> <!--this is the parent container-->
+          <div class = "main_text"> 
+              <h3 class = "main" id ="combinations">A Child's Perception <br>
+              is their Reality</h3>
+          </div>
+          <div class ="sub" >
+            <h7 class = "sub_text")>There is a significant benefit in the early<br>
+                awareness of the good traits and inclination of your <br>
+                child based on their name. Equip your child for high<br>
+                achievements in school, their careers and adult life - <br>
+                nurture, inspire and support the positive <br>traits by embracing this book.</h7>
+          </div> 
+    </div> <!--this section closes the parental container-->
+    </section>
+    
+    <!--Section where the 3 benefits are stipulated-->
+    <section class = "containerall">
+      <div class = "container1">
+        <img src="{% static './Alpha_Images/strong.png' %}">
+        <h7 class="Benefitss">Good Character</h7>
+      </div>
+      <div class ="container2">
+        <img src="{% static 'Alpha_Images/score.png' %}">
+        <h7 class="Benefitss">Good Grades</h7>
+      </div>
+      <div class ="container3">
+        <img src="{% static './Alpha_Images/mirror.png' %}">
+        <h7 class ="Benefitss">Self Confidence</h7>
+      </div>
+    </section><!--closing the parent container-->
+  
+    <div class ="Guide_section" id="G_sec" style="background-image:url('static/Alpha_images/Guide_section.png')">
+      <div class="container">
+        <h3 class = "section_text" id="combinations"> What is the <br>Alphanumeric Guide</h3>
+      </div>
+      <div class ="iframe_container">
+      <!--insert youtube video content-->
+      <iframe width="800" height="515" src="https://www.youtube.com/embed/-vngKNno2zc " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>
+  
+      <!--JavaScript at end of body for optimized loading-->
+  <section class = "report">
+    <div class = "entireall">
+    <div class = "entire"> <!--this div houses the entire write up in this section-->
+        <div class ="wrapfirst">
+          <div class ="analysis_report">
+              <h3 class = "main_vp" id="combinations"> Get your <br> Name Analysis <br>Report</h3>
+          </div>
+          <div class = "offer_sec">
+              <h7 class ="narrate" id = "narration">Within 10 minutes, you will receive a comprehensive<br>
+                report written in clear language on your child <br>
+                that will enable you to:</h7>
+          </div>
+        </div> <!--****WRAP FIRST -->
+     <!--We create another flexbox container for the bullet point (parental container)-->
+    <div class ="wrap_bulletin">
+      <div class ="wrap1">
+        <img src="{% static './Alpha_Images/Bulletin.png' %}" alt="" class="bullet">
+        <h7 class ="subA" id ="narration">Understand why your child acts the way <br>
+            (s)he does in a clear and lucid write up.</h7>
+      </div>
+  
+    <div class="wrap1">
+        <img src="{% static './Alpha_Images/Bulletin.png' %}" alt="" class="bullet">
+        <h7 class ="subB" id = "narration">Obtain Practical recommendations for <br>
+        parenting tailored specifically to your child.</h7>
+    </div>
+
+    <div class="wrap1">
+          <img src="{% static './Alpha_Images/Bulletin.png' %}" alt="" class="bullet">
+          <h7 class = "subC" id="narration" >Determine if your child's name will enable <br>
+          them to reach their future goals.</h7>
+    </div>
+    </div> <!--(this is the closing div for the parental container)-->
+  </div>
+
+
+
+     <!--Create a login form-->
+     <div class ="entire1">
+     <div class = "sign">
+    <div class ="sign_up_form">
+      <h6 class ="Get_Report">Free Report
+
+      </h6>
+      <h6 id ="sub_sub">Provide your Child's name to get
+         a free analysis (please ensure it is the first
+         letter of the name (s)he is usually
+         called. Example: Use letter T for 
+         Tasha as opposed to L for Latasha</h6>
+      <!--put but fields in a div so that you can utilize the flex box properties to gap both-->
+  <div class="formpack">
+    <div class ="form1">
+                            {% if messages %}
+                            {% for mes in messages %}
+                            <div class="alert alert-danger card-header">{{ mes }}</div>
+                            {% endfor %}
+                            {% endif %}
+                            <form id="job-application-form" method="post" class="logins">
+                                <div class="container">
+                                    {% csrf_token %}
+                                    {{ form }}
+                                </div>
+                                    <div class="container">
+                                        <button type="submit" id="CTA_click"class="btn btn-primary">Get Report</button>
+                                    </div>
+                            </form>
+        </div>
+        </div>
+      </div> <!--closing the form div pack -->
+
+    </div>
+  </div> <!--entire all div close-->
+  </section>  
+  
+    <section class ="testimonials"> <!--This is the overall parental div for this section-->
+      <div class="testi_tex">
+        <h3 class="test" id="narration">See what<br>Past Subscribers & Readers<br>have to say</h3>
+      </div>
+      <!--create cards for the testimonials-->
+  
+  <!--<div class ="outer_container">  This is the div that for the outer or parental container for the cards-->
+    <div class ="container">
+      <div class ="row">
+        <div class="card" id="offering_card">
+          <div class="card-content"> 
+            <p>"I wanted to thank you for the reading!
+                It was an exciting insight into my 
+                personality. Based on my name alone, 
+                you were able to extract meaning and 
+                characterisitcs specific to me and how 
+                I conduct myself, practice my beliefs 
+                and establish my values."</p>
+          </div>
+        </div>
+
+      <div class="card" id ="offering_card">
+        <div class="card-content">
+          <p>"Mr Pugh has a solid and thorough
+            command of letter sciences. Since I'm
+            not familiar, I wasn't expecting much
+            and was a bit sceptical.....who would
+            have thought five letters would reflect
+            so much about my personality traits.
+            I hightly recommend it!"
+            </p>
+        </div>
+      </div> 
+
+    <div class ="card" id ="offering_card">
+      <div class ="card-content">
+        <p>"Your reading of my name was so spot-on
+            in terms of my personality traits and 
+            tendencies regarding how I think as a person.
+            I was totally shocked that you could tell all.
+            those things from numbers and my name."</p>
+      </div>
+      </div>
+
+  <div class ="card" id ="offering_card">
+    <div class ="card-content">
+      <p>"Your name analysis is beautiful and 
+        so much me. I rate it a 10+1was totally shocked that you could tell all.
+        those things from numbers a"</p>
+    </div>
+  </div>
+
+</div><!--closing the row div-->
+</div><!--close the container div-->
+</section><!--close the main section-->
+
+<section class = "About_Author">
+  <div class = "Author"> <!--***PARENTAL DIV OPEN-->
+      <div class ="AboutA">
+          <h3 id="combinations">About the Author</h3><!-- this is the main section-->
+      </div>
+      <div class ="Synopsis"> <!--this div houses the brief bio of the Author-->
+         <h7>Dr.Pugh has been a giving and sharing<br>
+             person all his life as a father, friend and<br>
+             mentor, which has motivated him to write his <br>
+             book as his legacy to the world's young children<br>
+             and grandchildren. He loves to mentor, coach<br>
+             and lift up the spirit of others.</h7> 
+      </div>
+  </div> <!--****PARENTAL DIV CLOSE-->
+  
+  <div class="pic_hold">
+    <img src="{% static './Alpha_Images/Alfonso_Background.png' %}" alt="loading" class="authorpic">
+    </div>
+</section>
+  
+<section class = "closing_remark "style="background-image:url('static/Alpha_images/Hero_Background.png')">
+  <!--create an overlay -->
+  <div class="overlay2">
+  <div class ="holder" > 
+        <h3 url="(static/Alpha_fonts/BRITANNIC.ttf' %" >START PARENTING AS EASY AS 123!</h3>
+  </div>
+  </div>
+</section>
+
+<section class ="socials">
+  <div class="social">  <!--PARENTAL CONTAINER -->
+    <div class="social1">
+      <img src="{% static './Alpha_Images/Icon awesome-linkedin.png' %}" alt="loading">
+    </div>
+    <div class="social2">
+      <img src="{% static './Alpha_Images/Icon awesome-facebook-square.png' %}" alt="loading">
+    </div>
+    <div class="social3">
+      <img src="{% static './Alpha_Images/Icon awesome-twitter-square.png' %}" alt="loading">
+    </div>
+    <div class="social4">
+    <img src="{% static './Alpha_Images/Icon simple-tiktok.png' %}" alt="loading">
+  </div>
+</div>   <!--CLOSING PARENTAL CONTAINER-->
+</section>
+
+
+<!--this section is for the closing remarks-->
+  <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script> 
+</body>
+</html>
+<!--the end!-

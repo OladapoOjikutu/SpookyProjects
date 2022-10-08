@@ -1,0 +1,3 @@
+# NumeroNew
+# NumerologyProjects
+# NumerologyProjects

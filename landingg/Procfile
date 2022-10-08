@@ -1,0 +1,2 @@
+release: python3 manage.py 
+web: gunicorn Alphanumbers.wsgi:application --log-file -
