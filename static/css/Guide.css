@@ -5,14 +5,47 @@
 }
 .YURU{
   margin-top:-27px; 
-  background-image:("{% static '../Alpha_Images /.Hero_Back.png' %}");
-  height:630px;
+  background-image:url url("{% static '../Alpha_Images /.Hero_Back.png' %}");
+  height:85vh;
   width:100%;
   background-repeat:no-repeat;
-  background-size:cover;
-  overflow:hidden;
+  background-size:cover;  
+}
+/* this is to bring the text elements on the hero page to the front of the overlay */
+.messageee, .vp_message{
+    position:relative;
+}
+.messageee{
+    font-size:60px;
+    text-align:right;
+    font-weight:800px;
+    font-family: britannic;
+    color:white;
+    top:-15px;
+}
+.vp_message{
+    font-family:Raleway;
+    line-height:1.20;
+    top:-25px;
+    font-size:30.5px;
 }
 
+.flex_message{
+    display:block;
+    text-align:right;
+    right:30rem;
+    flex-direction: column;
+    padding-right:40px;
+   padding-top:100px;
+
+}
+.imageflexbook{
+    top:40px;
+}
+/*.messageee{
+    text-align: right;
+}
+*/
 .offer_sec{
     padding-bottom:10px;
     position:relative;
@@ -39,19 +72,20 @@
 .overlayys{
     margin:0;
     padding:0;
-    position:relative;
+    position:absolute;
     width:100%;
-    height:630px;
-    background-color:#0c9DAE;
+    height:85vh;
+    background-color:#82ceeb;
+    opacity:0.87;
 }
-.vp_message{
+/*.vp_message{
     text-align:right;
     margin-right:40px;
     padding-top:15%;
     position:relative;
     top:-50px;  
 }
-
+*/
 .introduction{
     height:250px;
 }
@@ -62,7 +96,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     /*Insert youtube video */
-
 }
 /*change the characteristics of the buttons*/
 #testimonials_btn{
@@ -101,7 +134,6 @@
     flex-direction: column;
     align-items: center;
     text-align:center;
-
 }
 .main_vp{
     margin-left:94px;
@@ -222,9 +254,8 @@
         display:flex;
         font-size:small;
     }
-    .vp_message, .closeit , .holder{
+    .closeit , .holder{
         font-family:sans-serif;
-        color:#f0f0f0;
         font-weight: 650;
         line-height: 1.17;
     }    
@@ -235,17 +266,17 @@
         display:flex;
         justify-content: right;
         position:relative;
-        top:-45px;
-        left:-30px;
-    }
+        /*top:-45px;*/
+        /*left:-30px;*/
+    } 
     .button1{
-        padding-left:8px;
+        padding-right:8px;
     }
     .closing_remark{
         background-image: url('./Alpha_Images/Hero_Background.png');
         background-repeat: no-repeat;
         background-size:cover;
-        height:180px;  
+        height:180px; 
     }
     /* bring the closing statement to the center using the flex box*/
     .closemessage{
@@ -340,12 +371,10 @@
         color:white;
         font-weight: 800;
     }
-    
     @font-face {
         font-family: "Goudy-old";
         src: url('../fonts/Goudy.ttf');
     }
-
     @font-face {
         font-family:"BRITANNIC";
         src:url('../fonts/BRITANIC.TTF');
@@ -358,7 +387,6 @@
         text-align:center;
         padding-bottom:5px;
     }
-
 /* use this css property for the new submit button from django*/
     #get_report{
         background-color: #ffa200;
@@ -373,7 +401,6 @@
         align-items:center;
         position:relative;
         bottom:-100px;
-
     }
     #fullname ,#emailaddy{
         background-color: white;
@@ -408,14 +435,15 @@
     position:relative;
     bottom:-20px;
 }
-.image_holder img {
+*.image_holder img {
     position:relative;
     left:-23px;
-    top:-480px;
+    top:-500px;
     height:90vh; /*resize the image which is too large*/
-    /*width:auto;*/
+    width:auto;
 }
-/* this here is to style the input field to white*/
+
+/* this here is to style the input field to white*/ 
 
 #job-application-form{
     border-radius: 4px;
@@ -438,6 +466,13 @@
 .sign{
     margin-right: 94px;
     margin-top:48px;
+}
+
+.overlay3{
+    height:180px;
+    color:#82ceeb;
+    z-index:3
+
 }
 /* IN THIS SECTION WE SHALL CREATE MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
 /* create a media query for all the main headers that have been emboldened */
@@ -613,6 +648,7 @@
     .image_holder img{
         height:86vh;
         top:-24em;
+        z-index: 3;
     }
 }
 @media (max-width:999px) {
@@ -626,15 +662,17 @@
     .YURU{
         height:900px;
     }
-    .vp_message{
+   /* .vp_message{
         text-align: center;
         font-size:2.5em;
-    }
+    }*/
     .buttonss{
         margin-bottom:19em;
     }
-
 } 
+
+
+
 
 
 

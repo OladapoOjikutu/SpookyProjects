@@ -37,32 +37,39 @@
         <!--place the book and the tagline in here-->
   
 <section class = "YURU" style="background-image:url('static/Alpha_images/Hero_Back.png')"> 
-  <div class="overlay">
-      <!--Create the div for the image to be attached to sit-->
-      <div class = "vp_flex">
-        <div class = "hero_message">
-            <h4 class ="vp_message" src="{% static './fonts/BRITANNIC.TTF' %}">Uncover the hidden talents and beautiful attributes <br> your child possesses just by using their name
-                 </h4>
-      </div>
+  <div class="overlayys"></div>
 
-      <div class="buttonss">
-          <div class ="button1"><a class="waves-effect waves-light btn-large" id=testimonials_btn >See Testimonials</a></div> 
-          <div class ="button1"><a class="waves-effect waves-light btn-large" id=getbook_btn>Get Book </a></div>
+    <div class="flex_message">   <!--the flex container that houses the buttons and the taglines-->
+        <div class ="container_xx">
+            <h2 class ="messageee">The Alphanumeric Guide <br>To Raising Better Children</h2>
+        </div>
+      
+      <div class ="container_yy">
+          <h4 class ="vp_message" src="{% static './fonts/BRITANNIC.TTF' %}"> Uncover your Childs hidden talents<br>& beautiful
+             attributes just by using <br>their names.</h4>
       </div>
       
-      <div class ="image_holder">
-          <img src="{% static './Alpha_Images/Book Image.png' %}" alt="" class="book">
+
+      <div class ="container_zz">
+        <div class ="buttonss">
+              <div class ="button1"><a class="waves-effect waves-light btn-large" id=testimonials_btn >See Testimonials</a></div> 
+              <div class ="button1"><a class="waves-effect waves-light btn-large" id=getbook_btn>Get Book </a></div>
+        </div>
       </div>
       </div>
     
-    
-   <!-- </div> --closing the vp flex  div -->
-    
+
+      <div class ="imagebookflex">
+          <div class ="image_holder">
+              <img src="{% static './Alpha_Images/Book Image.png' %}" alt="" class="book">
+          </div>
+      </div>
+      </div>
+
     </section>
     
       <!--Create a flex box for easy containment and alignment of the buttons-->
-      
-
+    
     <!--The Introduction Section-->
     <section class ="introduction">
       <div class ="introduction_container"> <!--this is the parent container-->
@@ -98,7 +105,7 @@
   
     <div class ="Guide_section" id="G_sec" style="background-image:url('static/Alpha_images/Guide_section.png')">
       <div class="container">
-        <h3 class = "section_text" id="combinations"> What is the <br>Alphanumeric Guide</h3>
+        <h3 class = "section_text" id="combinations"> What Is The <br>Alphanumeric Guide?</h3>
       </div>
       <div class ="iframe_container">
       <!--insert youtube video content-->
@@ -257,11 +264,11 @@
     </div>
 </section>
   
-<section class = "closing_remark "style="background-image:url('static/Alpha_images/Hero_Background.png')">
+<section class = "closing_remark "style="background-image:url('static/Alpha_images/Hero_Back.png')">
   <!--create an overlay -->
-  <div class="overlay2">
+  <div class="overlay3">
   <div class ="holder" > 
-        <h3 url="(static/Alpha_fonts/BRITANNIC.ttf' %" >START PARENTING AS EASY AS 123!</h3>
+        <h3 url="(static/Alpha_fonts/BRITANNIC.ttf' %" >Start parenting as easy as 123!</h3>
   </div>
   </div>
 </section>
