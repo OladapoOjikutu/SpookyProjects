@@ -1,5 +1,4 @@
 from lib2to3.refactor import get_all_fix_names
-#from tkinter import Entry
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext
@@ -632,18 +631,3 @@ def results(request,id):
         return render(request,'results.html',{'name':name})
 
         
-
-
-    
-            
-        
-
-        
-        
-        
-        
-        
-       
-        
-     
-

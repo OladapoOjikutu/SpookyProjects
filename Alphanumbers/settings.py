@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'import_export', 
     'embed_video',
     #'crispy_forms',
-    'colorfield', 
+    'colorfield',
 ]
 
 MIDDLEWARE = [ 
