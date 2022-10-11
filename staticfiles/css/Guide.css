@@ -469,9 +469,8 @@
 }
 
 .overlay3{
-    height:180px;
+    height:200px;
     color:#82ceeb;
-    z-index:3
 
 }
 /* IN THIS SECTION WE SHALL CREATE MEDIA QUERIES FOR MOBILE RESPONSIVENESS */

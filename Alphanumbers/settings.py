@@ -128,6 +128,8 @@ STATIC_URL = 'static/'
 
 MEDIA_URL = 'Alpha_Images/'
 
+
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
