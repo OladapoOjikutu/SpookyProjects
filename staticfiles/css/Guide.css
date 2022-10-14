@@ -86,9 +86,6 @@
     top:-50px;  
 }
 */
-.introduction{
-    height:250px;
-}
 #G_sec{
     margin-top:-27px;
     background-image: url("{% static '../Alpha_Images /.Guide_Section.png' %}");
@@ -116,7 +113,7 @@
     padding-top:50px;
 }
 .sub{
-    padding-left:30px;
+    padding-left:35px;
 }
 .sub_text{
     font-size: larger;
@@ -469,8 +466,9 @@
 }
 
 .overlay3{
-    height:200px;
+    height:px;
     color:#82ceeb;
+    z-index:3
 
 }
 /* IN THIS SECTION WE SHALL CREATE MEDIA QUERIES FOR MOBILE RESPONSIVENESS */

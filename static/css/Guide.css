@@ -25,6 +25,10 @@
     font-weight:800px;
     font-size:60px;
 }
+
+.Benefits_container{
+    display:flex;
+}
 .messageee{
     font-size:60px;
     text-align:right;
@@ -72,13 +76,40 @@
     color:#36454f;
 }
 
+.Benefits{
+    opacity:50%;
+}
+
 .containerall{
-    display:flex;
     background-color:#f8f8f8;
-    height:228px;
+    height:250px;
+    justify-content:center;
+    justify-items:normal;
+    bottom:20px;
+    
+}
+.benefits_text{
+    display:flex;
     align-items:center;
-    justify-content: space-around;
+    justify-content:space-around;
     justify-items:center;
+    height:250px;
+}
+.benefits_message{
+    display:flex;
+    justify-content: center;
+    justify-items:center;
+    padding-top:30px;
+}
+
+#alter{
+    opacity:50%;
+}
+.everything{
+    justify-content:space-evenly;
+}
+.benefits{
+    bottom:20px;
 }
 .overlayys{
     margin:0;
@@ -96,7 +127,7 @@
     position:absolute;
     width:100%;
     height:300px;
-    background-color:#82ceeb;
+    background-color:#86c4c9;
     opacity:0.87;
 }
 
@@ -113,7 +144,7 @@
 }
 */
 .introduction{
-    height:250px;
+    height:280px;
 }
 #G_sec{
     margin-top:-27px;
@@ -142,7 +173,8 @@
     padding-top:50px;
 }
 .sub{
-    padding-left:30px;
+    padding-left:50px;
+    height:300px;
 }
 .sub_text{
     font-size: larger;
