@@ -70,7 +70,25 @@
     background-color:#82ceeb;
     opacity:0.87;
 }
+.overlay3{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    position:absolute;
+    width:100%;
+    height:40vh;
+    background-color:#82ceeb;
+    opacity:0.87;
+    text-align:center;
+}
 
+.closing_remark{
+    background-image: url('./Alpha_Images/Hero_Background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:40vh; 
+}
 /*.vp_message{
     text-align:right;
     margin-right:40px;
@@ -263,12 +281,6 @@
     .button1{
         padding-right:8px;
     }
-    .closing_remark{
-        background-image: url('./Alpha_Images/Hero_Background.png');
-        background-repeat: no-repeat;
-        background-size:cover;
-        height:180px; 
-    }
     /* bring the closing statement to the center using the flex box*/
     .closemessage{
         display:flex;
@@ -460,24 +472,42 @@
     margin-top:48px;
 }
 
-.overlay3{
-    height:px;
-    color:#82ceeb;
-    z-index:3
 
-}
 .containerall {
+    height:250px;
+    background-color:#f8f8f8;
+    bottom:20px;
+}
+.benefits-list, .benefits-wrap{
+    display:flex;
+    justify-content:center;
+    justify-content:space-evenly;
+}
+.benefits-list{
+    padding-bottom:30px;
+}
+#Closing{
+    font-family: britannic;
+    color:white;
+    font-size:60px;
+}
+/*.containerall {
   background-color: #f8f8f8;
   height: 250px;
   justify-content: center;
-  justify-items: normal;
+  justify-items:normal;
   bottom: 20px;
   display: flex;
+  justify-content: space-around;
+
 }
+
+
 /* IN THIS SECTION WE SHALL CREATE MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
 /* create a media query for all the main headers that have been emboldened */
 /***************************************************************************/
 /***************************************************************************/
+
 
 @media (min-width:1137px) and (max-width:1200px) {
     #combinations, .test{
