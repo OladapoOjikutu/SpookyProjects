@@ -60,13 +60,6 @@
     font-family:Titilliumweb;
     color:#36454f;
 }
-.containerall{
-    display:flex;
-    background-color:#f8f8f8;
-    height:228px;
-    align-items:center;
-    justify-content: space-around;
-    justify-items:center;
 
 .overlayys{
     margin:0;
@@ -122,6 +115,7 @@
 .section_text{
     display:flex;
     justify-content:center;
+    justify-items: center;
     padding-top:30px;
     align-items: center;
     color:#36454f   
@@ -131,12 +125,6 @@
     flex-direction: column;
     align-items: center;
     text-align:center;
-}
-.benefits-list{
-    display:flex !important;
-    justify-content: center;
-    align-items: center;
-    display:none;
 }
 .main_vp{
     margin-left:94px;
@@ -301,11 +289,11 @@
         top:-10px;
         right:-8px;
     }
-    .container1, .container2, .container3{
+    /*.containerA, .containerB, .containerC{
         display:flex;
         align-items:center;
-        flex-direction:column;
-    }
+        flex-direction:row;
+    }*/
     .Benefitss{
         font-family:'Titilliumweb';
         font-weight:400;
@@ -477,6 +465,14 @@
     color:#82ceeb;
     z-index:3
 
+}
+.containerall {
+  background-color: #f8f8f8;
+  height: 250px;
+  justify-content: center;
+  justify-items: normal;
+  bottom: 20px;
+  display: flex;
 }
 /* IN THIS SECTION WE SHALL CREATE MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
 /* create a media query for all the main headers that have been emboldened */
