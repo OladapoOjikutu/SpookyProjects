@@ -258,6 +258,10 @@
         color:#36454f;
         opacity:100%;
     }
+    .benefits-list{
+        padding-top:30px;
+        padding-bottom:30px;
+    }
     #intro{
         color:#36454f;
         font-weight:200;
@@ -320,13 +324,13 @@
     .hero_background{
         height:80vh;
     }
-    .buttonss{
+    /*.buttonss{
         display:flex;
         justify-content: right;
-        position:relative;
+        position:relative;*/
         /*top:-45px;*/
-        /*left:-30px;*/
-    } 
+        /*left:-30px;
+    } */
     .button1{
         padding-right:8px;
     }
@@ -494,7 +498,7 @@
     bottom:-20px;
 }
 *.image_holder img {
-    position:relative;
+    position:ab;
     left:-23px;
     top:-500px;
     height:90vh; /*resize the image which is too large*/
@@ -552,6 +556,9 @@
     }
     .form1, .form2{
         top:15px;
+    }
+    .image_holder{
+        height:80vh;
     }
 }
 @media (max-width:1136px) and (min-width:1110px){
@@ -663,52 +670,25 @@
 }
 /* media queries for the hero page */
 /*****************************************************************************************************/
+
+@media (max-width:1347px) and (min-width:1345px){
+
+    .image_holder img{
+        top:-30px;
+    }
+}
+
+
 @media (max-width:1000px) and (min-width:922px){
     .vp_message{
         font-size:39px;
         word-break: break-all;
     }
-    .image_holder img{
-        height:87vh;
-        top:-25em;
-        left:-3.5em;
-        padding-right:25px;
-    }
 }
-@media (max-width:1347px) and (min-width:1143px){
-    .image_holder img{
-        top:-30em;
-    }
-}
-@media (max-width:1142px) and (min-width:1099px){
-    .image_holder img{
-        height:85vh;
-        top:-27em;
-        left:-3.8em;
-    }
-}
-@media (max-width:1143px) and (min-width:1126px){
-    .image_holder img{
-        left:-1em;
-        height:87vh;
-    }
-}
-@media (max-width:1097px)and (min-width:1001px){
-    .image_holder img{
-        top:-27em;
-        left:-3.8em;
-    }
+
     .vp_message{
         font-size:2.5em;
     }
-}
-@media (max-width:1019px) and (min-width:1000px){
-    .image_holder img{
-        height:86vh;
-        top:-24em;
-        z-index: 3;
-    }
-}
 @media (max-width:999px) {
     .vp_flex{
         display:flex;
