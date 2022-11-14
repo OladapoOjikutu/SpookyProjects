@@ -246,7 +246,6 @@
     }
     .testimonials{
         display:flex;
-        text-align:center;
         background-color: #86c4c9;
         justify-content:center;
         flex-direction:row;
@@ -254,7 +253,14 @@
         opacity:100%;
         height:600px;
     }
-    ::after .test{
+
+    .testimonialz{
+        background: #86c4c9;
+        background-color:aqua;
+    }
+
+
+  ::after .test{
         color:#36454f;
         opacity:100%;
     }
@@ -271,10 +277,7 @@
         font-family:Tahoma;
         font-size:14pts;
     }
-    .testimonials{
-        display:flex;
-        flex-direction:row;
-    }
+    
     .row{
         width:100%;
         display:flex;
@@ -504,6 +507,41 @@
     height:90vh; /*resize the image which is too large*/
     width:auto;
 }
+ /* CSS for the horizontal scrolling******************************************************************           */
+ .testimonial-wrap{
+    border:1px solid red;
+}
+
+.h5{
+    width:400px;
+    margin:auto;
+}
+.container{
+        /* Set it so we could calculate the offsetLeft */
+        position: relative;
+        height: 197px;
+        width: 836px;
+        /* Add scroll-bars */
+        overflow: auto;
+        float:left;
+      }
+
+      .left-arrow{
+        width:22px;
+        height:197px;
+        display:block;
+        margin-right:10px;
+        float:left;
+    }
+    
+    .right-arrow{
+        width:22px;
+        height:197px;
+        display:block;
+        margin-left:10px;
+        float:left;	
+    }
+
 
 /* this here is to style the input field to white*/ 
 
