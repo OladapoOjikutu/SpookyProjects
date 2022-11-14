@@ -502,6 +502,7 @@
     width:84%;
     height:350px;
     margin:0 auto;
+    overflow:hidden;
 }
 .testimonialz .testimonial-wrap .post{
     display:inline-block;
