@@ -480,6 +480,7 @@
 }
 .benefits-list{
     padding-bottom:30px;
+    padding-top:30px;
 }
 #Closing{
     font-family: britannic;
@@ -496,9 +497,10 @@
         background-color: #99C4C8;
         opacity:100%;
         height:600px;
+        position:relative;
     }
+
 .testimonial-wrap{
-    border:2px solid red;
     width:84%;
     height:350px;
     margin:0 auto;
@@ -509,6 +511,30 @@
     background:#ffa200;
     height:350px;
     width:300px;
+    margin: 0px 10px;
+}
+
+.testimonialz .next{
+    position:absolute;
+    top:50%;
+    right:30px;
+    cursor:pointer;
+    font-size:5em;
+    color:white;
+}
+
+.testimonialz .prev{
+    position:absolute;
+    top:50%;
+    left:30px;
+    cursor:pointer;
+    font-size:5em;
+    color:white;
+}
+
+.testimonialz .testimon .mecca{
+    text-align:center;
+    padding-top:25px;
 }
 /*.containerall {
   background-color: #f8f8f8;

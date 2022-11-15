@@ -3,17 +3,18 @@
   <html>
     <head>
       <!--Import Google Icon Font-->
-    <script src="{% static 'main.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- <script src="{% static 'js/main.js' %}"></script> -->
+    
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <script src="https://kit.fontawesome.com/a2b4119143.js" crossorigin="anonymous"></script>
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
-      <link rel ="stylesheet" href="{% static 'css/Guide.css' %}">
+      <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css"  media="screen,projection"/>
+      <link rel ="stylesheet" href="/static/css/Guide.css">
     
      
      
@@ -23,18 +24,7 @@
     <header>
 
   <div class=" navbar-fixed">
-    <nav>
-      <div class=" white nav-wrapper" id="alonavbar">
-        <ul class="Navigation_bar">
-          <li><a href="Introduction.html" id="intro">Introduction</a></li>
-          <li><a href="Benefits.html" id="intro">Benefits</a></li>
-          <li><a href="About Guide.html" id="intro">About Guide</a></li>
-          <li><a href="Subscriptions.html"id="intro">Subscriptions</a></li>
-          <li><a href="Testimonials.html" id="intro">Testimonials</a></li>
-          <li><a href="About Author.html" id="intro">About Author</a></li>ython
-        </ul>
-      </div>
-    </nav>
+    
   </div>
 </header>
     <body>
@@ -204,20 +194,46 @@
     <section class ="testimonialz"> <!--This is the overall parental div for this section-->
       <div class = "testimon">
         <h3 class="mecca">See what<br>Past Subscribers & Readers<br>have to say</h3>
-    
-      <!--create cards for the testimonials-->
+        <i class = "fas fa-chevron-left prev"></i>
+        <i class = "fas fa-chevron-right next"></i>
+
 
   <!--<div class ="outer_container">  This is the div that for the outer or parental container for the cards-->
   <!--***********************************************************************************************************-->
-
           <div class="testimonial-wrap">
-            <div class="post">1</div>
-            <div class="post">2</div>
-            <div class="post">3</div>
-            <div class="post">4</div>
-            <div class="post">5</div>
-            <div class="post">6</div>
-
+            <div class ="card" id ="offering_card">
+              <div class ="card-content">
+                <p>"Oh my God! this is so on point
+                in many ways, especially about being stubborn!!Thx for this
+                my dear friend. xoxo" <br><br><strong> - Maddie M</strong></p>
+              </div>
+              </div>
+              <div class ="card" id ="offering_card">
+                <div class ="card-content">
+                  <p>".Wow, Alfonso - I agree 100%... Never knew my name held so
+                    much meaningful detail. But the reading of my name is spot-on."<br><br><br><strong> - Donal G</strong></p>
+                </div>
+                </div>
+                <div class ="card" id ="offering_card">
+                  <div class ="card-content">
+                    <p>"I will give the accuracy a 9.5"
+                      <br><br><br><strong> - Carolyn V</strong></p>
+                  </div>
+                  </div>
+                  <div class ="card" id ="offering_card">
+                    <div class ="card-content">
+                      <p>"Yes my vowels and consonants were a 10 regarding me....on point!
+                        <br><br><strong> - Belinda</strong></p>
+                    </div>
+                    </div>
+                    <div class ="card" id ="offering_card">
+                      <div class ="card-content">
+                        <p>"Oh my God! this is so on point
+                        in many ways, especially about being stubborn!!Thx for this
+                        my dear friend. xoxo" <br><br><strong> - Maddie M</strong></p>
+                      </div>
+                      </div>
+          </div>
           </div>
         </div>
   
@@ -276,9 +292,10 @@
 
 
 <!--this section is for the closing remarks-->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="{% static 'main.js' %}"></script>
+  <script src="/static/js/main.js" type="text/javascript"></script>
  
 </body>
 </html>
