@@ -7,3 +7,5 @@ $('.testimonial-wrap').slick({
     nextArrow: $('.next'),
     prevArrow: $('.prev'),
   });
+
+  

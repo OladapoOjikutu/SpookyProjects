@@ -28,6 +28,12 @@
     line-height:1.20;
     top:-25px;
     font-size:30.5px;
+    width:481px;
+    height:109.78px;
+}
+.super_message{
+    display:flex;
+    justify-content:space-around;
 }
 
 .flex_message{
@@ -44,12 +50,10 @@
 
 .image_holder{
     display:flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
 }
-/*.messageee{
-    text-align: right;
-}
-*/
+
 .offer_sec{
     padding-bottom:10px;
     position:relative;
@@ -264,11 +268,11 @@
         border:inline-block;
         float:left;
     }
-    .informa{
+    /*.informa{
         float:right;
         display:flex;
         font-size:small;
-    }
+    } */
     .closeit , .holder{
         font-family:sans-serif;
         font-weight: 650;
@@ -438,12 +442,17 @@
 }
 *.image_holder img {
     position:relative;
-    left:-23px;
-    top:-500px;
-    height:90vh; /*resize the image which is too large*/
+    margin-left:-100px;
+    /*top:-500px;*/
+    /*height:90vh; /*resize the image which is too large*/
     width:auto;
+    top:-30px;
 }
-
+/******************************************EMBED YOUTUBE RESPONSIVELY *****************************************************************/
+.video{
+    aspect-ratio:18/9;
+    width: 70%;
+}
 /* this here is to style the input field to white*/ 
 
 #job-application-form{
@@ -487,9 +496,6 @@
     color:white;
     font-size:60px;
 }
-
-
-
 
 /********************** this section is the styling for the testimonials slider*************************/
 
@@ -647,98 +653,224 @@
     }
 }
 
-@media (max-width:988px) and (min-width:922px){
+
+@media only screen and (max-width:1024px) /*and (min-width:988px)*/{
+
+    .flex_message{
+        flex-direction:column;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap:wrap;
+    } 
+
     .subA, .subB, .subC, .narrate{
         font-size:17.5px;
     }
     .report{
-        height:auto;
+        height:1700px;
     }
     .sign_up_form{
         width:420px;
     }
-    .entireall{
-        flex-direction:row;
-        height:740px;
-        flex-wrap:wrap;
+    .report{
+        height:1000px;
     }
-    .entire, .main{
+    .entire{
         margin-left:-60px;
-    }  
+    } 
+    .main{
+        margin-left:-100px;
+    }
     .sign{
         align-self:flex-end;
-        margin-left:58%;
+       /* margin-left:58%; */
         margin-top:-20em;
         padding-left:20px;
     }
     #combinations{
         font-size:2.60em;
     }
+    .entireall{
+        display:flex;
+        flex-direction: column;
+        /*justify-content:center; */
+        justify-items:center;
+        text-align:justify;
+        height:1000px;
+        align-items:center;
+        flex-wrap:nowrap;
+    }
+    #narration{
+        font-size:20px;
+    }
+
     /*.hero_page_holder{
         top:-50em;
     }
 }
 /* media queries for the hero page */
 /*****************************************************************************************************/
-@media (max-width:1347px) and (min-width:1340){
-    .image_holder img {
-        height:50vh;
+/***************************************for keeping the "The Alphanumeric Guide to Children constant******************************************/
+/*@media(max-width:1035px) and (min-width:994px){
+    .messageee{
+        height:132px;
+        width:478.92px;
     }
 }
 
-@media (max-width:1000px) and (min-width:922px){
-    .vp_message{
-        font-size:39px;
-        word-break: break-all;
+*/
+@media only screen and (min-width:1001px){
+    .messageee{
+        height:132px;
+        width:478.92px;
     }
-   /* .image_holder img{
-        height:87vh;
-        top:-25em;
-        left:-3.5em;
-        padding-right:25px;
-    } */
 }
 
 @media (max-width:1142px) and (min-width:1099px){
     .image_holder img{
-        height:85vh;
-        top:-20em;
+      /*  height:85vh;*/
+       /* top:-20em;*/
         left:-3.8em;
     }
 }
-@media (max-width:1143px) and (min-width:1126px){
-    .image_holder img{
-        left:-1em;
-        height:87vh;
-    }
-}
-    .vp_message{
-        font-size:2.5em;
-    }
-}
+
 @media (max-width:1019px) and (min-width:1000px){
     .image_holder img{
-        height:86vh;
-        top:-30em;
+        /*height:86vh;*/
         z-index: 3;
     }
 }
-@media (max-width:999px) {
-    .vp_flex{
+/* the book is shifting towards the edge. needs some space*/
+@media (min-width:894px) and (max-width:1017px){
+    .image_holder img{
+        margin-left:10%;
+        height:90vh;
+    }
+    .flex_message{
+        padding-right:15%;
+    }
+}
+@media (min-width:865px) and (max-width:895px){
+    .vp_message{
+        font-size:28px;
+    }
+    .image_holder img{
+        margin-left:23%;
+        height:90vh;
+    }
+    .flex_message{
+        padding-right:20%;
+    }
+    .messageee{
+        font-size:57px;
+    }
+}
+/****************************create responsive layout for the benefits section*******************************************************/
+@media only screen and (max-width:769px){
+}
+/************************************************************************************************************************************/
+@media only screen and (max-width:865px){
+    .super_message{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        justify-items:center;
+    }
+    .YURU, .overlayys{
+        height: 1100px;
+    }
+    /* make text bigger for small devices*/
+    .messageee {
+        font-size:70px;
+    }
+    /* reorder the flex items for smaller devices*/
+    .container_xx{
+        order:1;
+    }
+    .container_yy{
+        order:2;
+    }
+    .super_message .image_holder{
+        order:3;
+    }
+    .container_zz{
+        order:4;
+    }
+    /* move the div that houses the messages and button a bit to the top*/
+    .flex_message{
+        top:-30px;
+    }
+    }
+    /*.overallauthor{
+        display:flex;
+        flex-direction:column;
+        justify-items:center;
+        align-items:center;
+        justify-content: center;
+    
+    } */
+    .About_Author{
+        height:720px;
+    }
+
+    .main_text{
+        width:25rem;
+        text-align:center;
+    }
+    .introduction_container{
+        flex-direction:column;
+        justify-content:space-evenly;
+        justify-items:center;
+        align-items:center;
+    }
+    .sub_text{
+        font-size: 20px;
+    }
+    #combinations{
+        font-size:2.90rem;
+    }
+    .Synopsis{
+        
+    }
+    .pic_hold{
+        order:0;
+    }
+}
+
+@media only screen and (max-width:964px){
+    .introduction_container{
+        flex-direction: column;
+        justify-content: center;
+        justify-items:center;
+        
+    }
+}
+
+/***************************************PADDING OF THE MESSAGES AFTER THE BENEFIT SECTION**********************************/
+@Media only screen and (max-width:793px){
+   .sub{
+    padding-left:0;
+    padding-right:100px;
+    left:40px;
+   }
+}
+
+/*@media (max-width:999px) {
+    /*.vp_flex{
         display:flex;
         flex-direction:column;
         height:850px;
         align-content:flex-start;
         align-items: center;
-    }
-    .YURU{
+    } */
+    /*.YURU{
         height:900px;
     }
    /* .vp_message{
         text-align: center;
         font-size:2.5em;
     }*/
-    .buttonss{
+  /*  .buttonss{
         margin-bottom:19em;
     }
 } 

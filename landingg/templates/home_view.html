@@ -12,12 +12,11 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <script src="https://kit.fontawesome.com/a2b4119143.js" crossorigin="anonymous"></script>
+      
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css"  media="screen,projection"/>
       <link rel ="stylesheet" href="/static/css/Guide.css">
     
-     
-     
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -33,16 +32,20 @@
 <section class = "YURU" style="background-image:url('static/Alpha_Images/Hero_Back.png')">
   <div class="overlayys"></div>
 
+  <div class = "super_message">
+    <div class ="image_holder">
+      <img src="{% static './Alpha_Images/Book Image.png' %}" alt="" class="book">
+  </div>
+
     <div class="flex_message">   <!--the flex container that houses the buttons and the taglines-->
         <div class ="container_xx">
-            <h2 class ="messageee">The Alphanumeric <br>Guide to Children</h2>
-        </div>
+          <h2 class ="messageee">The Alphanumeric <br>Guide to Children</h2>
+    </div>
 
       <div class ="container_yy">
-          <h4 class ="vp_message" src="{% static './fonts/BRITANNIC.TTF' %}"> Uncover your Children's hidden <br>talents and beautiful
-             attributes <br> simply by using their names.</h4>
+          <h4 class ="vp_message" src="{% static './fonts/BRITANNIC.TTF' %}"> Uncover your Children's hidden talents and beautiful
+             attributes simply by using their names.</h4>
       </div>
-
 
       <div class ="container_zz">
         <div class ="buttonss">
@@ -52,15 +55,15 @@
       </div>
       </div>
 
+      
+  </div>
+    </section>
     <!--  <div class ="imagebookflex"> -->
-    <div class ="image_holder">
-        <img src="{% static './Alpha_Images/Book Image.png' %}" alt="" class="book">
-    </div>
+  
      <!-- </div> -->
      <!-- </div> -->
 
     </section>
-
         <!--Section where the 3 benefits are stipulated-->
         <section class = "containerall">
           <div class ="benefits-list">
@@ -105,21 +108,19 @@
     </section>
 
 
-
     <div class ="Guide_section" id="G_sec" style="background-image:url('static/Alpha_Images/Guide_Section.png')">
       <div class="container">
         <h3 class = "section_text" id="combinations"> What Is The <br>Alphanumeric Guide?</h3>
       </div>
       <div class ="iframe_container">
       <!--insert youtube video content-->
-      <iframe width="800" height="515" src="https://www.youtube.com/embed/-vngKNno2zc " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video" width="800" height="515" src="https://www.youtube.com/embed/-vngKNno2zc " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </div>
-
       <!--JavaScript at end of body for optimized loading-->
   <section class = "report">
     <div class = "entireall">
-    <div class = "entire"> <!--this div houses the entire write up in this section-->
+      <div class = "entire"> <!--this div houses the entire write up in this section-->
         <div class ="wrapfirst">
           <div class ="analysis_report">
               <h3 class = "main_vp" id="combinations"> Get your <br> Name Analysis <br>Report</h3>
@@ -151,13 +152,13 @@
     </div>
     </div> <!--(this is the closing div for the parental container)-->
   </div>
-
-
+  
+  
 
      <!--Create a login form-->
      <div class ="entire1">
      <div class = "sign">
-    <div class ="sign_up_form">
+      <div class ="sign_up_form">
       <h6 class ="Get_Report">Free Report
 
       </h6>
@@ -183,12 +184,13 @@
                                         <button type="submit" id="CTA_click"class="btn btn-primary">Get Report</button>
                                     </div>
                             </form>
-        </div>
-        </div>
+    </div> <!--closing the form div-->
+  </div> <!--closing the formpack div-->
       </div> <!--closing the form div pack -->
 
     </div>
   </div> <!--entire all div close-->
+  </div>
   </section>
 
     <section class ="testimonialz"> <!--This is the overall parental div for this section-->
@@ -240,12 +242,13 @@
   </section><!--close the main section-->
 
 <section class = "About_Author">
+  <div class = overallauthor>
   <div class = "Author"> <!--***PARENTAL DIV OPEN-->
       <div class ="AboutA">
           <h3 id="combinations">About the Author</h3><!-- this is the main section-->
       </div>
       <div class ="Synopsis"> <!--this div houses the brief bio of the Author-->
-         <h7>Dr.Pugh has been a giving and sharing<br>
+         <h7 class ="sub_text">Dr.Pugh has been a giving and sharing<br>
              person all his life as a father, friend and<br>
              mentor, which has motivated him to write his <br>
              book as his legacy to the world's young children<br>
@@ -272,6 +275,7 @@
   <div class="pic_hold">
     <img src="{% static './Alpha_Images/Alfonso_Background.png' %}" alt="loading" class="authorpic">
     </div>
+    </div> <!--closing in on the overall div-->
 </section>
 
 <section class = "closing_remark "style="background-image:url('static/Alpha_Images/Hero_Back.png')">
@@ -299,4 +303,4 @@
  
 </body>
 </html>
-<!--the end!-g
+<!--the end!-
