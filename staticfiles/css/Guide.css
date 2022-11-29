@@ -674,6 +674,7 @@
     }
     .report{
         height:1000px;
+        margin-left:106px;
     }
     .entire{
         margin-left:-60px;
@@ -690,6 +691,9 @@
     #combinations{
         font-size:2.60em;
     }
+    .introduction_container{
+        margin-left: 100px;
+    }
     .entireall{
         display:flex;
         flex-direction: column;
@@ -699,6 +703,8 @@
         height:1000px;
         align-items:center;
         flex-wrap:nowrap;
+        right: -30%; 
+
     }
     #narration{
         font-size:20px;
@@ -782,6 +788,11 @@
     /* make text bigger for small devices*/
     .messageee {
         font-size:70px;
+        right:-4%;
+    }
+    .vp_message{
+        right:-12.4%;
+        text-align: center;
     }
     /* reorder the flex items for smaller devices*/
     .container_xx{
@@ -799,6 +810,9 @@
     /* move the div that houses the messages and button a bit to the top*/
     .flex_message{
         top:-30px;
+    }
+    .buttonss{
+        left:-10%;
     }
     }
     /*.overallauthor{
@@ -835,6 +849,9 @@
     .pic_hold{
         order:0;
     }
+    .image_holder img{
+        right:-5%;
+    }
 }
 
 @media only screen and (max-width:964px){
@@ -846,15 +863,114 @@
     }
 }
 
+@media only screen and (max-width:598px){
+    .messageee{
+        font-size: 56px;
+        right:-4%; 
+        text-align: center;
+    }
+    .vp_message{
+        right:-3.4%; 
+        text-align: center;
+        font-size:26.5px; 
+    }
+    .image_holder img{
+        height:90vh;
+    }
+    .YURU, .overlayys{
+        height: 995px; 
+    }
+    #Closing{
+        font-size: 56px;
+    }
+}
+
 /***************************************PADDING OF THE MESSAGES AFTER THE BENEFIT SECTION**********************************/
 @Media only screen and (max-width:793px){
    .sub{
     padding-left:0;
     padding-right:100px;
     left:40px;
+    width:520px; 
    }
 }
+/**************************************************************** BENEFITS SECTION*********************************************************************/
+@media only screen and (max-width: 720px){
+    .containerall{
+        height:670px;
+        flex-direction:column;
+    }
+    .benefits-wrap{
+        flex-direction:column;
+        justify-content:center;
+        text-align: center;
+        row-gap: 45px; /* increase the gap between the flex items (Icons and the benefits*/
+    }
+    .Benefitss{
+        font-size: 27px;
+    }
+}
 
+/* keep the navigation scroll bar on the testimonial section tidy */
+@media only screen and (max-width:970px){
+    #left-navi{
+      left: 0px;
+    }
+    #right-navi{
+        right:0px;
+    }
+}
+@media only screen and (max-width:599px){
+    .Synopsis{
+        padding-left: 5px;
+    }
+}
+@media only screen and (max-width:579px){
+    .sub_text, #narration{
+        font-size:18px;
+    }
+}
+   
+@media (min-with:503px)and (max-width:508px){
+    .Benefitss{
+        text-align:center; 
+    }
+}
+@media only screen and (max-width:598px){  /* pad the "immediate benefits section at the top*/
+    .benefits-list{
+        padding-top:43px;
+        padding
+    }
+}
+@media only screen and (max-width:500px){
+    .benefits-list{
+        text-align:center; 
+    }
+}
+
+/*At 537 downwards the width of the text for the author’s biography should be kept constant at 381.29px also align to the center */
+@media only screen and (max-width:537px){
+    .sub_text{
+        width:381.29px;
+    }
+}
+@media only screen and (max-width:579px){
+    .Author{
+        text-align:center;
+        margin-right: 10px;
+    }
+    .social{
+        justify-content:center;
+    }
+    .pic_hold{
+        right:-5%;
+    }
+}
+@media only screen and (max-width:552px){
+    .messageee, #Closing{
+        font-size: 52px;
+    }
+}
 /*@media (max-width:999px) {
     /*.vp_flex{
         display:flex;
