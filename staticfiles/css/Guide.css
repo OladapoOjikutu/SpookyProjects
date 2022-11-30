@@ -577,7 +577,6 @@ html, body{
     .sign{
         margin-right:75px;
     }
-}
     /* reduce the dimension of the login form for smaller devices */
     .sign_up_form{
         height:450px;
@@ -587,7 +586,7 @@ html, body{
     .form1, .form2{
         top:15px;
     }
-
+}
 @media (max-width:1136px) and (min-width:1110px){
     /* reduce the font size from henceforth */
     .subA, .subB, .subC, .narrate{
@@ -720,7 +719,6 @@ html, body{
     #narration{
         font-size:20px;
     }
-}
 
     /*.hero_page_holder{
         top:-50em;
@@ -784,7 +782,8 @@ html, body{
     }
 }
 /****************************create responsive layout for the benefits section*******************************************************/
-
+@media only screen and (max-width:769px){
+}
 /************************************************************************************************************************************/
 @media only screen and (max-width:865px){
     .super_message{
@@ -854,12 +853,16 @@ html, body{
     #combinations{
         font-size:2.90rem;
     }
+    .Synopsis{
+        
+    }
     .pic_hold{
         order:0;
     }
     .image_holder img{
         right:-5%;
     }
+}
 
 @media only screen and (max-width:964px){
     .introduction_container{
@@ -889,9 +892,9 @@ html, body{
     }
 }
 
-@media (min-width:500px) and (max-width:598px){
+@media only screen (min-width:500px) and (max-width:598px){
     .image_holder img{
-        height:90vh;
+        height:60vh;
     }
 }
 
@@ -953,6 +956,7 @@ html, body{
 @media only screen and (max-width:598px){  /* pad the "immediate benefits section at the top*/
     .benefits-list{
         padding-top:43px;
+        padding
     }
 }
 @media only screen and (max-width:556px){
