@@ -884,22 +884,35 @@ html, body{
         text-align: center;
         font-size:26.5px; 
     }
+    /*.image_holder img{
+        height:90vh;
+    } */
     .YURU, .overlayys{
-        height: 995px; 
+        height: 838px; 
     }
     #Closing{
         font-size: 56px;
     }
 }
 
-@media only screen (min-width:500px) and (max-width:598px){
+@media (min-width:500px) and (max-width:598px){
     .image_holder img{
-        height:60vh;
+        height:70vh;
+    }
+    .vp_message{
+        width:467px;
+        height:79.78px;
+    }
+    .flex_message{
+        padding-top:50px;
+    }
+    .YURU, .overlayys{
+        height: 790px;
     }
 }
 
 /* THIS CODE SECTION DEALS WITH THE MOBILE RESPONSIVENESS OF THE HERO SECTION */
-
+/*from 537px to 500px pad the value proposition becausse its very close to the margin */
 
 /***************************************PADDING OF THE MESSAGES AFTER THE BENEFIT SECTION**********************************/
 @Media only screen and (max-width:793px){
