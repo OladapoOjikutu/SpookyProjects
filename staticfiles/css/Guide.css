@@ -1126,7 +1126,7 @@
             text-align: center;
         }
         }
-        
+
 /*@media (max-width:999px) {
     /*.vp_flex{
         display:flex;
@@ -1147,12 +1147,20 @@
     }
 } 
 
-
-
-
-
-
-
+/***Responsiveness for the youtube Embed        section ****/
+@media (min-width:600px) and (max-width:700px){
+    .video{
+        aspect-ratio: 4/3;
+        width:80%; 
+        height:100vh;
+    }
+}
+/* ths */
+@media only screen and (min-width: 1060px){
+    .About_Author{
+        height:420px; 
+    }
+}
 
 
 
