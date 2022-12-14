@@ -1184,4 +1184,9 @@
         display:none; 
     }
 }
+@media (min-width:399px) and (max-width:435px){
+    .image_holder{
+        height: 57vh;
+    }
+}
 
