@@ -1,9 +1,4 @@
-html, body{
-    width:100%;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-}
+
 
 *{
     padding:0;
@@ -22,7 +17,7 @@ html, body{
     position:relative;
 }
 .messageee{
-    font-size:60px;
+    font-size:59px;
     text-align:right;
     font-weight:800px;
     font-family: britannic;
@@ -75,7 +70,8 @@ html, body{
     color:#36454f;
 }
 .main_text{
-    width:200rem;
+    width:200rem; 
+    display:block;
 }
 .overlayys{
     margin:0;
@@ -188,7 +184,12 @@ html, body{
     }
     .subA_container, .subB_container, .subC_container{
         padding-bottom:8px;
-    }
+    }html, body{
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
 
     .main, .main_vp, .section_text,.test ,.AboutA{
         font-family:'Raleway', sans-serif;
@@ -508,7 +509,6 @@ html, body{
 /***********************************************************************************************************************************************/
 
 /********************** this section is the styling for the testimonials slider*************************/
-
      .testimonialz {
         background-color: #99C4C8;
         opacity:100%;
@@ -719,7 +719,7 @@ html, body{
     #narration{
         font-size:20px;
     }
-
+}
     /*.hero_page_holder{
         top:-50em;
     }
@@ -749,7 +749,6 @@ html, body{
         left:-3.8em;
     }
 }
-
 @media (max-width:1019px) and (min-width:1000px){
     .image_holder img{
         /*height:86vh;*/
@@ -781,9 +780,20 @@ html, body{
         font-size:57px;
     }
 }
-/****************************create responsive layout for the benefits section*******************************************************/
-@media only screen and (max-width:769px){
+
+@media (min-width:1000px) and (max-width:1024px){
+    .messageee{
+        font-size:59px; 
+    }
 }
+
+@media (min-width:500px) and (max-width:519px){
+    .messageee{
+        font-size:56px; 
+    }
+
+}
+/****************************create responsive layout for the benefits section*******************************************************/
 /************************************************************************************************************************************/
 @media only screen and (max-width:865px){
     .super_message{
@@ -797,7 +807,7 @@ html, body{
     }
     /* make text bigger for small devices*/
     .messageee {
-        font-size:70px;
+       /* font-size:70px; */
         right:-4%;
     }
     .vp_message{
@@ -837,45 +847,41 @@ html, body{
         height:720px;
     }
 
-    .main_text{
+   /* .main_text{
         width:25rem;
         text-align:center;
-    }
-    .introduction_container{
+    } */
+   /* .introduction_container{
         flex-direction:column;
         justify-content:space-evenly;
         justify-items:center;
         align-items:center;
-    }
+    } */
     .sub_text{
         font-size: 20px;
     }
     #combinations{
         font-size:2.90rem;
     }
-    .Synopsis{
-        
-    }
+
     .pic_hold{
         order:0;
     }
     .image_holder img{
         right:-5%;
     }
-}
 
-@media only screen and (max-width:964px){
+/*@media only screen and (max-width:964px){
     .introduction_container{
         flex-direction: column;
         justify-content: center;
-        justify-items:center;
-        
+        justify-items:center;  
     }
-}
+} */
 
 @media only screen and (max-width:598px){
     .messageee{
-        font-size: 56px;
+       /* font-size: 56px; */
         right:-4%; 
         text-align: center;
     }
@@ -890,9 +896,7 @@ html, body{
     .YURU, .overlayys{
         height: 838px; 
     }
-    #Closing{
-        font-size: 56px;
-    }
+
 }
 
 @media (min-width:500px) and (max-width:598px){
@@ -916,10 +920,9 @@ html, body{
         height:70vh;
     }
 }
-
-@media (min-width:434px) and (max-width:499px){
+@media (min-width:400px) and (max-width:499px){
     /* reduce the value proposition*/
-    .messageee, #closing{
+    .messageee, #Closing{
         font-size:45px;
     }
     .buttonss{
@@ -962,6 +965,7 @@ html, body{
     }
     .sign{
         margin-top:-39em;
+        margin-right:135px;
     }
     .testimonialz{
         height:505px;
@@ -970,10 +974,23 @@ html, body{
     .Author{
         margin-top:-64px;
     }
-
+    #Closing{
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .pic_hold img{
+        height:50vh;
+    }
+    .pic_hold{
+        top:20em;
+    }
+    .entire{
+        margin-left:-103px;
+    }
+    .About_Author{
+        height:630px;
+    }
 }
-
-
 /* THIS CODE SECTION DEALS WITH THE MOBILE RESPONSIVENESS OF THE HERO SECTION */
 /*from 537px to 500px pad the value proposition becausse its very close to the margin */
 
@@ -1002,8 +1019,6 @@ html, body{
         font-size: 27px;
     } */
 }
-
-
 /* keep the navigation scroll bar on the testimonial section tidy */
 @media only screen and (max-width:970px){
     #left-navi{
@@ -1016,6 +1031,12 @@ html, body{
 @media only screen and (max-width:599px){
     .Synopsis{
         padding-left: 5px;
+    }
+}
+
+@media (min-width:599px) and (max-width:865px){
+    .vp_message{
+        left:25px; 
     }
 }
 @media only screen and (max-width:579px){
@@ -1032,7 +1053,6 @@ html, body{
 @media only screen and (max-width:598px){  /* pad the "immediate benefits section at the top*/
     .benefits-list{
         padding-top:43px;
-        padding
     }
 }
 @media only screen and (max-width:556px){
@@ -1061,11 +1081,52 @@ html, body{
         right:-5%;
     }
 }
-@media only screen and (max-width:552px){
-    .messageee, #Closing{
-        font-size: 52px;
+@media (min-width:500px) and (max-width:509px){
+    .sign_up_form{
+        margin-bottom: -20px;
+    }
+    .report{
+        height:1030px; 
     }
 }
+@media (min-width:500px) and (max-width:527px){
+    .offer_sec{
+        padding-right: 40px; 
+    }
+    #narration br {
+        display:none;
+    }
+    /*.wrap1{
+        padding-right: 64px; 
+    } */
+    .offer_sec{
+        padding-bottom:19px; 
+    }
+    .subC{
+        margin-top:-16px; 
+    }
+}
+
+@media (min-width:500px) and (max-width:583px){
+    .wrap1{
+        padding-right:64px;
+    }
+    }
+
+
+    @media only screen and (max-width:1024px){
+        .introduction_container {
+            flex-direction: column;
+            justify-content: space-evenly;
+            justify-items: center;
+            align-items: center;
+        }
+        .main_text{
+            width:26rem; 
+            text-align: center;
+        }
+        }
+        
 /*@media (max-width:999px) {
     /*.vp_flex{
         display:flex;
