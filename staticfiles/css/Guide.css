@@ -1124,6 +1124,7 @@
         .main_text{
             width:26rem; 
             text-align: center;
+            margin-left:1.168rem; 
         }
         }
 
@@ -1162,14 +1163,25 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+/* At 435px or less pad the value proposition message so that it does not stick out to the margin */
+@media only screen and (max-width:435px){
+    .vp_message{
+        padding-left:90px;
+        padding-right:90px; 
+    }
+}
+/*from 499px downwards align the header of the 3rd section to the left */
+@media only screen and (max-width:499px){
+    .main{
+        text-align: left;
+        margin-left:-63px;
+        padding-right:9rem; 
+    }
+}
+/**/
+@media only screen (max-width:430px){
+    .narrate br{
+        display:none; 
+    }
+}
 
