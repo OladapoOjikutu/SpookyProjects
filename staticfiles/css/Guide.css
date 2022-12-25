@@ -915,12 +915,12 @@
         height: 790px;
     }
 }
-@media (min-width:400px) and (max-width:598px){
+@media (min-width:350px) and (max-width:598px){
     .image_holder img{
         height:70vh;
     }
 }
-@media (min-width:400px) and (max-width:499px){
+@media (min-width:370px) and (max-width:499px){
     /* reduce the value proposition*/
     .messageee, #Closing{
         font-size:45px;
@@ -1039,11 +1039,7 @@
         left:25px; 
     }
 }
-@media only screen and (max-width:579px){
-    /*.sub_text, #narration{
-        font-size:18px;
-    } */
-}
+
    
 @media (min-with:503px)and (max-width:508px){
     .Benefitss{
@@ -1164,11 +1160,18 @@
 }
 
 /* At 435px or less pad the value proposition message so that it does not stick out to the margin */
+/* At 435px reduce the box size and pull it down */
+
 @media only screen and (max-width:435px){
     .vp_message{
         padding-left:90px;
         padding-right:90px; 
+        font-size:20.5px; 
     }
+    .image_holder img{
+        top:-36px;  
+    }
+
 }
 /*from 499px downwards align the header of the 3rd section to the left */
 @media only screen and (max-width:499px){
@@ -1178,15 +1181,68 @@
         padding-right:9rem; 
     }
 }
-/**/
-@media only screen (max-width:430px){
-    .narrate br{
+/* at width of 430px */
+@media only screen and (max-width:430px){
+    .narrate br {
         display:none; 
     }
+    .offer_sec{
+        padding-left:40px;
+        padding-right:36px; 
+    }
+    .main_vp{
+        margin-left:38px;
+    }
+    .subA, .subB, .subC {
+        left:40px;
+    }
+    .bullet{
+        position:absolute;
+        left:40px;
+    }
+    .subA{
+        left:80px; 
+    }
 }
-@media (min-width:300px) and (max-width:435px){
-    .image_holder{
-        height: 57vh;
+@media (min-width:400px) and (max-width:598px){
+    .image_holder img{
+        height: 63vh; 
     }
 }
 
+@media only screen and (max-width:498px){
+    .pic_hold img{
+        margin-right: -3px; 
+    }
+}
+
+/* @450px because the screen is too wide, we pad the texts at both sides. */
+@media (min-width:400px) and (max-width:450px){
+    .sub_text{
+        padding-left:5%;
+        padding-right:5%;
+    }
+    .main_text{
+        margin-left:4.168rem;
+    }
+}
+@media (min-width:370px) and (max-width:399px){
+    .sub_text{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .main{
+        text-align:center;
+        margin-left:-33px; 
+    }
+    .image_holder img{
+        height:65vh; 
+    }
+}
+@media only screen and (max-width:410px){
+    .bullet{
+        max-width: 20px;
+        max-height:20px; 
+        left:45px;
+    }
+}
