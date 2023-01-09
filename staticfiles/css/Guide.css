@@ -54,9 +54,7 @@
     justify-content: center;
     align-items: center;
 }
-#narration br {
-    display:none; 
-}
+
 
 .offer_sec{
     padding-bottom:10px;
@@ -937,8 +935,8 @@
     }
     .vp_message{
         font-size: 19.5px;
-        padding-left: 35px;
-        padding-right:35px;
+        padding-left: 90px;
+        padding-right:90px;
     }
     .buttonss{
         margin-top:-60px;
@@ -1253,15 +1251,17 @@
     }
 }
 /*remove line breaks and pad the bullet point articles to the right on extremly small devices*/
-@media only screen and (max-width: 389px){
+@media only screen and (max-width: 392px){
     #narration br{
         display:none; 
     }
     .subA{
-        padding-right:128px; 
+        padding-right:125px;
     }
     .sign{
-        padding-top:50px; 
-        margin-bottom: -11px;
+        padding-top:65px; 
+    }
+    .report{
+        height: 1060px; 
     }
 }
